@@ -1,0 +1,28 @@
+{
+  "name": "netlify-react-sf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:fe": "cd ./front-end && npm run start",
+    "build:fe": "cd ./front-end && npm run build",
+    "clean:dist": "rm -rf dist && mkdir dist",
+    "build:functions": "tsc -p .",
+    "dev:be": "npm run build:functions && ntl dev -p 4040",
+    "prod": "npm run clean:dist && npm run build:fe"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-lambda": "^1.0.6",
+    "typescript": "^4.1.2"
+  },
+  "exclude": [
+    "front-end"
+  ],
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.64",
+    "@types/node": "^14.14.10"
+  }
+}
