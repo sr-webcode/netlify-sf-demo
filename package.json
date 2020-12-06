@@ -9,7 +9,7 @@
     "clean:dist": "rm -rf dist && mkdir dist",
     "build:functions": "tsc -p .",
     "dev:be": "npm run build:functions && ntl dev -p 4040",
-    "prod": "npm run clean:dist && npm run build:fe"
+    "prod": "npm run clean:dist && npm run build:fe && npm run build:functions"
   },
   "keywords": [],
   "author": "",
