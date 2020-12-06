@@ -12,6 +12,7 @@
 # production
 /build
 /builtFuncs
+/dist
 
 # misc
 .DS_Store
